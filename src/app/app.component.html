@@ -1,0 +1,16 @@
+<div class="grid">
+    <img src="assets/logo.png" alt="logo">
+    <header>
+        <h1>Online Shop</h1>
+    </header>
+    <app-menu></app-menu>
+    <span class="cnt">
+        <router-outlet></router-outlet>
+    </span>
+</div>
+<footer>
+    <button (click)="openDialog = true">Newsletter</button>
+</footer>
+<span *ngIf="openDialog">
+    <app-popup (closeDialog)="openDialog=false"></app-popup>
+</span>
