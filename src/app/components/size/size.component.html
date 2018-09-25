@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <th>
+      Herstellergröße
+    </th>
+    <th>Deutschland</th>
+    <th>Brustumfang</th>
+    <th>Taillenumfang</th>
+    <th>Armlänge</th>
+  </tr>
+  <tr *ngFor="let size of allSizes">
+    <td>
+      {{size.name}}
+    </td>
+    <td>
+      {{size.germany}}
+    </td>
+    <td>
+      {{size.chest}}
+    </td>
+    <td>
+      {{size.arm}}
+    </td>
+    <td>
+      {{size.waist}}
+    </td>
+    <td>
+      <button>select</button>
+    </td>
+  </tr>
+</table>
