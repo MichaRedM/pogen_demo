@@ -14,6 +14,7 @@ import { CardService } from './card.service';
 import { LoginComponent } from './components/login/login.component';
 import { SizeComponent } from './components/size/size.component';
 import { SizeService } from './size.service';
+import { E2eIdDirective } from './e2e-id.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SizeService } from './size.service';
     ProductComponent,
     LoginComponent,
     SizeComponent,
+    E2eIdDirective,
   ],
   imports: [
     BrowserModule,
