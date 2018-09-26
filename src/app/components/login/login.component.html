@@ -1,11 +1,11 @@
 <div>
-  <div *ngIf="step===1">
+  <div *ngIf="step===1" e2e="Step1" >
     Benutzername:
-    <input>
+    <input e2e="Input">
   </div>
-  <div *ngIf="step===2">
+  <div *ngIf="step===2" e2e="Step2" >
     Password:
-    <input>
+    <input e2e="Input">
   </div>
 </div>
-<button (click)="step = step + 1">Weiter</button>
+<button (click)="step = step + 1" e2e="NextButton" >Weiter</button>
