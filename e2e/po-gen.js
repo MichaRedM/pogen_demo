@@ -11,4 +11,9 @@ module.exports.GeneratePageObjects = async function  () {
             await dashboardPage.getOpenPopup().click();
         }
     });
+    let orderForm = await pageObjectBuilder.generate({
+        name: 'Order',
+        byRoute: '/order'
+    })
+    
 }
