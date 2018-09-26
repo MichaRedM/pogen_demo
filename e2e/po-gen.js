@@ -35,5 +35,8 @@ module.exports.GeneratePageObjects = async function  () {
         name: 'Size',
         byRoute: '/size'
     });
-    
+    let products = await pageObjectBuilder.generate({
+        name: 'Products',
+        byRoute: '/products'
+    });
 }
