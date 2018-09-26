@@ -46,6 +46,11 @@ export class GeneratedSize {
         return element.all(by.css('.e2e-sizetablerow'));
     }
 
+    // ElementType: TD
+    getSizeTableClo(sizeTableRowIndex: number): ElementArrayFinder {
+        return this.getSizeTableRow().get(sizeTableRowIndex).all(by.css('.e2e-sizetableclo'));
+    }
+
     // ElementType: BUTTON
     getSizeTableRowButton(sizeTableRowIndex: number): ElementFinder {
         return this.getSizeTableRow().get(sizeTableRowIndex).element(by.css('.e2e-sizetablerowbutton'));
