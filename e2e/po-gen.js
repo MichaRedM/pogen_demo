@@ -6,4 +6,9 @@ module.exports.GeneratePageObjects = async function  () {
         name: 'Dashboard',
         byRoute: '/dashboard'
     });
+    dashboardPage = await dashboardPage.append({
+        byActionAsync: async () => {
+            await dashboardPage.getOpenPopup().click();
+        }
+    });
 }

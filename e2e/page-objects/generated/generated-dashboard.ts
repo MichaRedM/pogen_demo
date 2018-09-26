@@ -46,4 +46,14 @@ export class GeneratedDashboard {
         return element(by.css('.e2e-title'));
     }
 
+    // ElementType: BUTTON
+    getClosePopup(): ElementFinder {
+        return element(by.css('.e2e-closepopup'));
+    }
+
+    // ElementType: P
+    getPopup(): ElementFinder {
+        return element(by.css('.e2e-popup'));
+    }
+
 }
