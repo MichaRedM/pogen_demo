@@ -31,4 +31,9 @@ module.exports.GeneratePageObjects = async function  () {
             await login.getNextButton().click();
         }
     });
+    let size = await pageObjectBuilder.generate({
+        name: 'Size',
+        byRoute: '/size'
+    });
+    
 }
