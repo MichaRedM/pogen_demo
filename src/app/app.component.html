@@ -9,7 +9,7 @@
     </span>
 </div>
 <footer>
-    <button (click)="openDialog = true">Newsletter</button>
+    <button (click)="openDialog = true" e2e="OpenPopup" >Newsletter</button>
 </footer>
 <span *ngIf="openDialog">
     <app-popup (closeDialog)="openDialog=false"></app-popup>
